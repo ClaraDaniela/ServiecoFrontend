@@ -1,0 +1,84 @@
+/* Contenedor general del carrito */
+#contenedor-tarjetas {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f5f6fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+#contenedor-tarjetas h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0033a0;
+}
+
+/* Lista de productos */
+#contenedor-tarjetas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada producto */
+#contenedor-tarjetas li {
+  display: flex;
+  justify-content: space-between; /* Nombre y precio a la izquierda, botón a la derecha */
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+#contenedor-tarjetas li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Botón eliminar */
+#contenedor-tarjetas li button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+#contenedor-tarjetas li button:hover {
+  background-color: #d9363e;
+}
+
+/* Total */
+#contenedor-tarjetas h2,
+#contenedor-tarjetas h3:last-of-type {
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #0033a0;
+}
+
+/* Botón de seguir comprando */
+#contenedor-tarjetas a button {
+  display: block;
+  width: 200px;
+  margin: 20px auto 0;
+  padding: 10px;
+  background-color: #0033a0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#contenedor-tarjetas a button:hover {
+  background-color: #001f66;
+}
