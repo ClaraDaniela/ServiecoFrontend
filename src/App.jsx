@@ -9,6 +9,7 @@ import Login from './components/Login'
 import Carrito from './components/Carrito'
 import Equipo from './components/Equipo'
 import Dashboard from './components/Dashboard'
+import FormularioIngreso from './pages/FormularioIngresoMateriales'
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import "./styles/App.css"
 
@@ -42,7 +43,8 @@ function App() {
         <Route path='/login' element={<Login setIsLogged={setIsLogged} setUser={setUser} />} />
         <Route path="/dashboard/*" element={isLogged ? (
          <Dashboard user={user}/>) : (
-         <Navigate to="/login" state={{ aviso: "Debe iniciar sesión" }} />)}/>               
+         <Navigate to="/login" state={{ aviso: "Debe iniciar sesión" }} />)}/>  
+        <Route path="/formulario-ingreso" element={<FormularioIngreso />} />      
       </Routes>
       <Footer />
     </div>

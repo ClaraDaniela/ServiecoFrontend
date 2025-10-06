@@ -1,0 +1,60 @@
+/* Tabla de viajes */
+.table-viajes {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  background-color: #ffffffcc; /* fondo semi-transparente */
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+.table-viajes thead {
+  background-color: #3498db; /* azul Servieco */
+  color: white;
+}
+
+.table-viajes th,
+.table-viajes td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.table-clientes tbody tr {
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  transition: background-color 0.2s;
+}
+
+.table-viajes tbody tr:hover {
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.table-viajes th:first-child,
+.table-viajes td:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.table-viajes th:last-child,
+.table-viajes td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Botón dentro de la tabla */
+.table-viajes button {
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #2ecc71; /* verde Servieco */
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.table-viajes button:hover {
+  background-color: #27ae60;
+}

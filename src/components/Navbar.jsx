@@ -12,6 +12,7 @@ function Navbar({ isLogged, setIsLogged }) {
                 <li><Link to="/productos">Productos</Link></li>
                 <li><Link to="/equipo">Equipo</Link></li>
                 <li><Link to="/carrito">Carrito</Link></li>
+                <li><Link to="/formulario-ingreso">Formulario</Link></li>
             </ul>
 
             <div className='av-login'>

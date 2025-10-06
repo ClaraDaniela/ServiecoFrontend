@@ -10,7 +10,7 @@ const Carrito = ({carrito, eliminarDelCarrito}) => {
             <div>
                 <h2>Carrito vacio</h2>
                 <Link to="/productos"><button>Volver a Productos</button></Link>
-            </div>            
+            </div>          
                                
         )
         
