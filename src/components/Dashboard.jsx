@@ -46,6 +46,8 @@ function Dashboard({ user }) {
       <main className="main-content">
         <header className="dashboard-header">
           <span>Hola, {user?.nombre}</span>
+           <div className='av-login'><button onClick={handleLogout}>Logout</button>
+            </div>
         </header>
 
         <section className="dashboard-body">

@@ -1,60 +1,59 @@
-/* Tabla de viajes */
-.table-viajes {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
+.viajes-contenedor {
+  padding: 20px;
+  background: #fff;
   border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 100%;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  background-color: #ffffffcc; /* fondo semi-transparente */
-  color: #2c3e50;
-  font-size: 0.95rem;
 }
 
-.table-viajes thead {
-  background-color: #3498db; /* azul Servieco */
-  color: white;
+.viajes-contenedor h2 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.table-viajes th,
-.table-viajes td {
-  padding: 12px 15px;
+.tabla-scroll {
+  width: 100%;
+  overflow-x: auto;   /* IMPORTANTE: habilita scroll horizontal */
+  overflow-y: hidden;
+  white-space: nowrap; /* evita que la tabla haga wrap */
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.table-viajes {
+  width: max-content;  /* se ajusta al contenido y activa scroll si es más grande */
+  border-collapse: collapse;
+}
+
+.table-viajes th, .table-viajes td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
   text-align: left;
 }
 
-.table-clientes tbody tr {
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  transition: background-color 0.2s;
+.table-viajes thead th {
+  background-color: #3498db;
+  color: white;
+  position: sticky;
+  top: 0;
 }
 
-.table-viajes tbody tr:hover {
-  background-color: rgba(52, 152, 219, 0.1);
+.acciones-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
-.table-viajes th:first-child,
-.table-viajes td:first-child {
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-}
-
-.table-viajes th:last-child,
-.table-viajes td:last-child {
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-
-/* Botón dentro de la tabla */
-.table-viajes button {
+.acciones-btns button {
   padding: 5px 10px;
-  font-size: 0.85rem;
-  border-radius: 6px;
   border: none;
-  background-color: #2ecc71; /* verde Servieco */
+  border-radius: 6px;
+  background-color: #3498db;
   color: white;
   cursor: pointer;
-  transition: 0.2s;
 }
 
-.table-viajes button:hover {
-  background-color: #27ae60;
+.acciones-btns button:hover {
+  background-color: #2980b9;
 }

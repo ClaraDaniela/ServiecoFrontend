@@ -56,6 +56,22 @@ function ProgramacionViaje() {
     setViajes(viajes.filter((v) => v.id !== id));
   };
 
+  const editarViaje = (id) => {
+    const viajeAEditar = viajes.find((v) => v.id === id);
+    if (viajeAEditar) {
+      const nuevoEstado = prompt("Nuevo estado:", viajeAEditar.estado);
+      if (nuevoEstado) {
+        setViajes(
+          viajes.map((v)=> {
+            if(v.id === id) {
+              return {...v, estado: nuevoEstado}
+            }
+            return v;
+          })
+        )
+      }}
+  }
+
   return (
     <div className="programacion-container">
       <h2>Programación de Viajes</h2>

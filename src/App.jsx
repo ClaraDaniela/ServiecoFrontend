@@ -18,8 +18,7 @@ function App() {
   const [carrito, setCarrito] =useState([]);
   const [user, setUser] = useState(null);
   const location = useLocation();
-  const mostrarNavbar = location.pathname !== '/dashboard';
-
+  const mostrarNavbar = !location.pathname.startsWith('/dashboard');
 
   
   const eliminarDelCarrito = (productoId) => {
